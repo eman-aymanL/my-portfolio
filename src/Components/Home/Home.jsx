@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="shadow-xl border-b-8 border-primary-light dark:border-background-light bg-background-light dark:bg-background-dark pt-32 min-h-[calc(100vh-150px)] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 px-6 md:px-20 lg:px-40 py-0"
+      className="shadow-xl border-b-8 border-primary-light dark:border-background-light bg-background-light dark:bg-background-dark pt-32 min-h-[calc(100vh-150px)] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 px-6 md:px-20 lg:px-40 py-12 md:py-8"
     >
       <div className="flex-1 text-center md:text-left space-y-6">
         <motion.h1

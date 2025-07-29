@@ -55,7 +55,7 @@ export default function Home() {
           className="pt-5 flex flex-col sm:flex-row items-center sm:items-start gap-4"
         >
           <a
-            href="/eman-cv.pdf"
+            href="https://drive.google.com/file/d/15wH3iTD6b0of3i_rSjrC16RxTYNY4KMg/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-primary-light dark:bg-background-light dark:text-gray-800 text-white rounded-xl shadow-md hover:bg-gray-800 transition-all duration-300"

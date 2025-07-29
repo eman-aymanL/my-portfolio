@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaWhatsapp, FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { useLanguage } from '../Context/LanguageContext/LanguageContext';
 
 
@@ -15,9 +15,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-[500px] px-12 md:px-28 lg:px-48 py-24 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark shadow-xl"
+      className="dark:border-b-2 dark:border-background-light px-12 md:px-28 lg:px-48 py-24 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark shadow-xl"
     >
       <motion.h2
+      viewport={{ once: true }}
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
@@ -26,6 +27,7 @@ export default function Contact() {
         {language === 'en' ? 'Contact me' : 'تواصل معي'}
       </motion.h2>
       <motion.h4
+      viewport={{ once: true }}
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
@@ -36,6 +38,7 @@ export default function Contact() {
       </motion.h4>
 
       <motion.div
+      viewport={{ once: true }}
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
@@ -66,15 +69,7 @@ export default function Contact() {
           <FaGithub size={50} className="mb-2" />
           <span>GitHub</span>
         </a>
-        <a
-          href="https://wa.me/201154232694"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-700 dark:text-gray-300 hover:text-primary transition"
-        >
-          <FaWhatsapp size={50} className="mb-2" />
-          <span>WhatsApp</span>
-        </a>
+       
 
         <a
           href="https://www.facebook.com/emanAymanL/"

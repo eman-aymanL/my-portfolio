@@ -66,8 +66,9 @@ export default function Projects() {
     const { language } = useLanguage();
 
   return (
-    <div id='projects' className="min-h-screen px-8 py-10 dark:bg-background-dark  bg-background-light border-b-8 border-primary-light shadow-xl">
+    <div id='projects' className="dark:border-background-light min-h-screen px-8 py-10 dark:bg-background-dark  bg-background-light border-b-8 border-primary-light shadow-xl">
       <motion.div
+      viewport={{ once: true }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

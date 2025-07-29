@@ -20,8 +20,9 @@ export default function SkillsSection() {
   const [active, setActive] = useState("Programming Languages");
 
   return (
-    <section id='skills' className="h-[600px] flex flex-col items-center justify-center px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl">
+    <section id='skills' className="dark:border-background-light flex flex-col items-center justify-center px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl">
       <motion.div
+      viewport={{ once: true }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -51,6 +52,7 @@ export default function SkillsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {skills[active].map((skill) => (
             <motion.div
+            viewport={{ once: true }}
               key={skill}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

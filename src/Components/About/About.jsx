@@ -15,9 +15,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-72 flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl"
+      className="dark:border-background-light flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl"
     >
       <motion.div
+      viewport={{ once: true }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -47,7 +48,7 @@ export default function About() {
           autoplay
           loop
           src={animationData}
-          className="w-96 h-72 sm:w-80 sm:h-80 md:w-[800px] md:h-[400px]"
+          className=" sm:max-w-80 sm:max-h-80 md:max-w-[800px] md:max-h-[400px]"
         />
       </motion.div>
     </section>

@@ -1,5 +1,4 @@
 import {
-  FaWhatsapp,
   FaFacebook,
   FaLinkedin,
   FaGithub,
@@ -23,14 +22,6 @@ export default function Footer() {
         </p>
 
         <div className="flex items-center gap-4 text-primary text-xl ">
-          <a
-            href="https://wa.me/201234567890"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-          >
-            <FaWhatsapp className="hover:text-green-500 transition" />
-          </a>
           <a
             href="mailto:eman@example.com"
             target="_blank"

@@ -28,13 +28,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className=" border-b-2 border-background-light bg-primary-light dark:bg-primary-dark text-white shadow-lg sticky top-0 left-0 right-0 z-50 p-7">
+    <nav className=" border-b-2 border-background-light bg-primary-light dark:bg-primary-dark text-white shadow-lg sticky top-0 left-0 right-0 z-50 p-6">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="home" smooth={true} duration={500}>
           <h1 className='cursor-pointer text-background-light text-xl md:text-4xl'>emanAyman</h1>
         </Link>
 
-        <ul className="hidden md:flex gap-10 text-background-light dark:text-background-light ">
+        <ul className="hidden lg:flex gap-6 text-background-light dark:text-background-light ">
           <li>
             <Link to="home" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
               {language === 'en' ? 'Home' : 'الرئيسية'}
@@ -56,8 +56,28 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="experience" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
+              {language === 'en' ? 'experience' : 'الخبرة'}
+            </Link>
+          </li>
+          <li>
+            <Link to="services" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
+              {language === 'en' ? 'Services' : 'الخدمات'}
+            </Link>
+          </li>
+          <li>
             <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
               {language === 'en' ? 'Projects' : 'المشاريع'}
+            </Link>
+          </li>
+          <li>
+            <Link to="awards" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
+              {language === 'en' ? 'Awards' : 'الجوائز'}
+            </Link>
+          </li>
+          <li>
+            <Link to="certificates" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500">
+              {language === 'en' ? 'Certificates' : 'الشهادات'}
             </Link>
           </li>
           <li>
@@ -76,7 +96,7 @@ export default function Navbar() {
             {language === 'en' ? 'AR' : 'EN'}
           </button>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-background-light dark:text-background-light">
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-background-light dark:text-background-light">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -105,8 +125,23 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="experience" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              {language === 'en' ? 'experience' : 'الخبرة'}
+            </Link>
+          </li>
+          <li>
             <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500" onClick={() => setIsOpen(false)}>
               {language === 'en' ? 'Projects' : 'المشاريع'}
+            </Link>
+          </li>
+          <li>
+            <Link to="awards" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              {language === 'en' ? 'Awards' : 'الجوائز'}
+            </Link>
+          </li>
+          <li>
+            <Link to="certificates" smooth={true} duration={500} className="cursor-pointer hover:text-yellow-500" onClick={() => setIsOpen(false)}>
+              {language === 'en' ? 'Certificates' : 'الشهادات'}
             </Link>
           </li>
           <li>

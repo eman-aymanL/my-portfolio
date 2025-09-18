@@ -7,6 +7,11 @@ import todo from '../../assets/todo.PNG'
 import login from '../../assets/login.PNG'
 import { motion } from 'framer-motion';
 import { useLanguage } from '../Context/LanguageContext/LanguageContext';
+import polygon2 from "../../assets/polygon2.svg"
+
+      
+
+
 
 
             
@@ -66,7 +71,8 @@ export default function Projects() {
     const { language } = useLanguage();
 
   return (
-    <div id='projects' className="dark:border-background-light min-h-screen px-8 py-10 dark:bg-background-dark  bg-background-light border-b-8 border-primary-light shadow-xl">
+    <div id='projects' className="relative dark:border-background-light min-h-screen px-8 py-10 dark:bg-background-dark  bg-background-light border-b-8 border-primary-light shadow-xl">
+      <img src={polygon2} alt="" className="h-full absolute bottom-0 left-0 w-full opacity-10"/>
       <motion.div
       viewport={{ once: true }}
         initial={{ opacity: 0, y: 40 }}

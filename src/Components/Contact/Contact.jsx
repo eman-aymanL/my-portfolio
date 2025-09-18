@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { useLanguage } from '../Context/LanguageContext/LanguageContext';
+import polygon from "../../assets/polygon.svg"
 
 
 
@@ -14,9 +15,10 @@ export default function Contact() {
   const { language} = useLanguage();
   return (
     <section
-      id="contact"
-      className="dark:border-b-2 dark:border-background-light px-12 md:px-28 lg:px-48 py-24 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark shadow-xl"
+    id="contact"
+    className="h-[70vh] relative dark:border-b-2 dark:border-background-light px-12 md:px-28 lg:px-48 py-24 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark shadow-xl"
     >
+      <img src={polygon} alt="" className="h-full absolute bottom-0 left-0 w-full opacity-10"/>
       <motion.h2
       viewport={{ once: true }}
         initial="hidden"

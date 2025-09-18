@@ -2,13 +2,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from '../Context/LanguageContext/LanguageContext';
+import img5 from "../../assets/blob5.svg"
 
 
 
 const skills = {
-  "Programming Languages": ["C++", "Java", "JavaScript", "TypeScript", "HTML", "CSS"],
-  "Frameworks & Libraries": ["React js", "Next js", "Vite", "Tailwind CSS", "Bootstrap", "MUI","JQuery"],
-  "Tools & Technologies": ["Vs Code", "Git", "GitHub", "Vercel", "Figma", "Postman"],
+  "Programming Languages": ["C++", "Java", "JavaScript", "TypeScript", "HTML", "CSS","SQL","MySQL"],
+  "Frameworks & Libraries": ["React js", "Next js","Angular", "Vite", "Tailwind CSS", "Bootstrap", "MUI","JQuery"],
+  "Tools & Technologies": ["Vs Code", "Git", "GitHub", "Vercel", "Figma", "Postman","Node.js","WordPress","MongoDB"],
   "Software Engineering Concepts": ["Problem Solving", "Competitive Programming", "Data Structures", "Algorithms", "OOP"],
   "Soft Skills": ["Communication", "Problem Solving", "Time Management", "Teamwork","Self Learning"],
 };
@@ -20,13 +21,15 @@ export default function SkillsSection() {
   const [active, setActive] = useState("Programming Languages");
 
   return (
-    <section id='skills' className="dark:border-background-light flex flex-col items-center justify-center px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl">
+    <section id='skills' className=" relative md:h-[70vh] dark:border-background-light flex flex-col items-center justify-center px-6 md:px-20 lg:px-40 py-16 bg-background-light dark:bg-background-dark border-b-8 border-primary-light shadow-xl">
+            <img src={img5} alt="" className="absolute bottom-0 left-0 w-full opacity-50 z-0"/>
+      
       <motion.div
       viewport={{ once: true }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-4xl text-center md:text-left"
+        className="w-full max-w-4xl text-center md:text-left z-10"
       >
          <div className="max-w-5xl mx-auto px-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 dark:text-background-light mb-10 text-center">

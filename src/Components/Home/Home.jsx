@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import prod1 from "../../assets/prod1.jpg";
+
+import img5 from "../../assets/blob5.svg"
 import { useLanguage } from "../Context/LanguageContext/LanguageContext";
 import { FaFacebook } from "react-icons/fa";
 
@@ -10,15 +12,16 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="shadow-xl border-b-8 border-primary-light dark:border-background-light bg-background-light dark:bg-background-dark pt-32 min-h-[calc(100vh-150px)] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 px-6 md:px-20 lg:px-40 py-12 md:py-8"
+      className="relative shadow-xl border-b-8 border-primary-light dark:border-background-light bg-background-light dark:bg-background-dark pt-32 min-h-[calc(100vh-150px)] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 px-6 md:px-20 lg:px-40 py-12 md:py-8"
     >
-      <div className="flex-1 text-center md:text-left space-y-6">
+      <img src={img5} alt="" className="absolute bottom-0 left-0 w-full opacity-50 z-0"/>
+      <div className="flex-1 text-center md:text-left space-y-6 z-10">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-white"
+          className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-white "
         >
           {language === "en" ? " Hi, Iam Eman Ayman" : "مرحباً, أنا إيمان أيمن"}
         </motion.h1>
@@ -31,8 +34,8 @@ export default function Home() {
           className="text-2xl md:text-4xl font-semibold text-primary-light dark:text-background-light"
         >
           {language === "en"
-            ? "  Iam a Frontend Developer"
-            : "أنا مطورة واجهات أمامية"}
+            ? "  Iam a MERN stack Developer"
+            : "أنا مطورة MERN Stack"}
         </motion.h2>
 
         <motion.p
@@ -52,7 +55,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="pt-5 flex flex-col sm:flex-row items-center sm:items-start gap-4"
+          className="z-10 pt-5 flex flex-col sm:flex-row items-center sm:items-start gap-4"
         >
           <a
             href="https://drive.google.com/file/d/15wH3iTD6b0of3i_rSjrC16RxTYNY4KMg/view?usp=sharing"
@@ -75,7 +78,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="px-5 flex justify-center md:justify-start gap-6 text-2xl text-primary-light dark:text-background-light"
+          className=" px-5 flex justify-center md:justify-start gap-6 text-2xl text-primary-light dark:text-background-light"
         >
           <a href="https://github.com/eman-aymanL" target="_blank">
             <FaGithub />
@@ -107,7 +110,7 @@ export default function Home() {
         <img
           src={prod1}
           alt="Eman Ayman"
-          className="md:w-96 md:h-96 h-64 w-64 object-cover shadow-lg rounded-full"
+          className="md:w-96 z-20 md:h-96 h-64 w-64 object-cover shadow-lg rounded-full"
         />
       </motion.div>
     </section>

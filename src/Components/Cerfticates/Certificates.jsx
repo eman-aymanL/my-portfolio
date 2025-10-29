@@ -13,6 +13,7 @@ import cert1 from "../../assets/cert1.png";
 import cert2 from "../../assets/cert2.png";
 import cert3 from "../../assets/cert3.png";
 import cert4 from "../../assets/cert4.png";
+import cert5 from "../../assets/cert5.jpg";
 import polygon from "../../assets/polygon.svg";
 
 export default function Certificates() {
@@ -25,6 +26,7 @@ export default function Certificates() {
     { id: 2, src: cert2, alt: "Certificate 2" },
     { id: 3, src: cert3, alt: "Certificate 3" },
     { id: 4, src: cert4, alt: "Certificate 4" },
+    { id: 5, src: cert5, alt: "Certificate 5" },
   ];
 
   const openModal = (src) => {

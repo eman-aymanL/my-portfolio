@@ -18,7 +18,7 @@ export default function Contact() {
     id="contact"
     className="h-[70vh] relative dark:border-b-2 dark:border-background-light px-12 md:px-28 lg:px-48 py-24 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark shadow-xl"
     >
-      <img src={polygon} alt="" className="h-full absolute bottom-0 left-0 w-full opacity-10"/>
+      <img src={polygon} alt="" className=" pointer-events-none h-full absolute bottom-0 left-0 w-full opacity-10"/>
       <motion.h2
       viewport={{ once: true }}
         initial="hidden"
@@ -62,6 +62,7 @@ export default function Contact() {
           <FaLinkedin size={50} className="mb-2" />
           <span>LinkedIn</span>
         </a>
+        
         <a
           href="https://github.com/eman-aymanL"
           target="_blank"

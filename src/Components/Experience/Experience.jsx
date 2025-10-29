@@ -49,6 +49,8 @@ export default function Experience() {
 
            
           </div>
+
+
           <div className="bg-orange-100 mt-5 dark:bg-zinc-900 rounded-2xl p-6 md:p-10 shadow-lg border-l-8 border-primary-light dark:border-background-light">
             <h2 className="text-2xl font-semibold text-zinc-800 dark:text-background-light mb-1">
               {language === 'en' ? 'Elevvo teck' : 'ايليفو تيك'}
@@ -65,6 +67,25 @@ export default function Experience() {
 
            
           </div>
+
+
+
+          <div className="bg-orange-100 mt-5 dark:bg-zinc-900 rounded-2xl p-6 md:p-10 shadow-lg border-l-8 border-primary-light dark:border-background-light">
+  <h2 className="text-2xl font-semibold text-zinc-800 dark:text-background-light mb-1">
+    {language === 'en' 
+      ? 'IEEE ET5 Student Branch' 
+      : 'فرع IEEE ET5 الطلابي'}
+  </h2>
+  <p className="text-sm text-zinc-500 dark:text-orange-100 mb-3">
+    {language === 'en' ? 'Front-End Head & Instructor | 2025 – Present' : 'رئيس قسم الواجهة الأمامية ومدربة | 2025 – حتى الآن'}
+  </p>
+  <p className="mt-2 text-base text-zinc-600 dark:text-orange-100 leading-relaxed">
+    {language === 'en'
+      ? 'Responsible for leading the front-end team, preparing learning materials, and delivering interactive sessions on HTML, CSS, JavaScript, and React.js. Guide members through real-world projects and foster a collaborative learning environment.'
+      : 'مسؤولة عن قيادة فريق الواجهة الأمامية، إعداد المواد التعليمية، وتقديم جلسات تفاعلية حول HTML وCSS وJavaScript وReact.js. أوجّه الأعضاء خلال مشاريع عملية وأعزز بيئة تعلم تعاونية.'}
+  </p>
+</div>
+
 
          
         

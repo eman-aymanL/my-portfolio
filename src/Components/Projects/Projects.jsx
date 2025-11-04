@@ -3,8 +3,8 @@ import ecommerce from '../../assets/ecommerce.PNG'
 import socialApp from '../../assets/socialapp.PNG'
 import yummy from '../../assets/yummy.PNG'
 import weather from '../../assets/weather.PNG'
-import todo from '../../assets/todo.PNG'
 import login from '../../assets/login.PNG'
+import habitTracker from '../../assets/habit-tracker.png'
 import { motion } from 'framer-motion';
 import { useLanguage } from '../Context/LanguageContext/LanguageContext';
 import polygon2 from "../../assets/polygon2.svg"
@@ -33,6 +33,16 @@ const projects = [
     info: "A modern and responsive social platform where users can sign up, log in, upload profile photos, create and manage posts, and interact via comments.",
     technologies: ["Next js", "TypeScript","MUI","Axios", "Redux", "API"],
   },
+    {
+    title: "habit-tracker",
+    image: habitTracker,
+    demo: "https://eman-aymanl.github.io/weather-site-/",
+    github: "https://github.com/eman-aymanL/weather-site-",
+    info: "A habit tracking app that helps users build and maintain good habits. It includes habit management, progress tracking, and a full authentication system with signup, login, email verification, and password reset.",
+    technologies: ["Node.js", "Express.js", "MongoDB","Mongoose","JWT","bcryptjs","dotenv","Angular", "RxJS", "TailwindCSS"],
+  },
+
+
   {
     title: "Yummy",
     image: yummy,
@@ -49,14 +59,8 @@ const projects = [
     info: "A simple weather application that allows users to search for any city and get current weather conditions including temperature, humidity, wind speed, and sky status using the OpenWeatherMap API.",
     technologies: ["HTML", "CSS", "JavaScript","Bootstrap"],
   },
-  {
-    title: "Todo-List",
-    image: todo,
-    demo: "https://eman-aymanl.github.io/ToDo-Site/",
-    github: "https://github.com/eman-aymanL/ToDo-Site",
-    info: "A responsive CRUD (Create, Read, Update, Delete) system built with HTML, CSS, Bootstrap, and JavaScript. It features dynamic data management and a user-friendly interface. Key Features: Responsive design with Bootstrap. Full CRUD operations using JavaScript. Clean, modular, and customizable code.",
-    technologies: ["HTML", "CSS", "Bootstrap","JavaScript"],
-  },
+
+
   {
     title: "Smart Login",
     image: login,
